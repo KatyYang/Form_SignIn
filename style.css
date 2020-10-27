@@ -44,7 +44,7 @@ main {
 .heading{
   background-color: rgba(36, 63, 77, .3);
   height: 25vh;
-  color:white;
+  color:#fff;
 
 }
 
@@ -68,11 +68,32 @@ main {
 /* form */
 form {
   padding: 1.5em ;
-  color: white;
+  color: #fff;
 }
 
 input, #year{
   margin: 1em .1em;
+}
+
+#name, #email, #studentId{
+  width:50%;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+#year{
+  width: 53%;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+#submit{
+  margin-top: 1em;
+  padding: 1em;
+  width: 25vw;
+  background-color: #0090AD;
+  color: #fff;
+  border-color: #fff;
 }
 
 /* responsive */
