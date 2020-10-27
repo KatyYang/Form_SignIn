@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto&display=swap" rel="stylesheet">
+    <title>Club Sign in</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="banner">
+          <div class="heading">
+            <h1 id="title">Club Sign In</h1>
+            <p id="description">Please sign in for this event!</p>
+          </div>
+        </div>
+      </header>
+
+      <form class="sign-in" id="survey-form" action="index.html" method="post">
+<!-- regular input -->
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" name="name" required id="name" placeholder="Enter your name (Required)" minlength="3" maxlength="12"><br>
+        <label for="email" id="email-label">Email</label> <br>
+        <input type="email" name="email" required id="email" placeholder="Enter your email"> <br>
+        <label for="number" id="number-label">Student Id Number</label> <br>
+        <input type="number" name="number" placeholder="Enter your Student id number" min="100000000" max="999999999"><br>
+  <!-- drop down -->
+        <label for="year" id="year-label">Year</label><br>
+        <select id="year" name="year">
+          <option value="freshmen">Freshmen</option>
+          <option value="sophmore">Sophmore</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="alumni">Alumni</option>
+        </select><br>
+  <!-- radio -->
+        <label for="discover" id="discover-label">How did you find out about us?</label> <br>
+        <input type="radio" name="discover" id="facebook" value="facebook">
+        <label for="facebook">Facebook</label><br>
+        <input type="radio" name="discover" id="instagram" value="instagram">
+        <label for="instagram">Instagram</label><br>
+        <input type="radio" name="discover" id="fliers" value="fliers">
+        <label for="fliers">Fliers</label><br>
+        <input type="radio" name="discover" id="friends" value="friends">
+        <label for="friends">Friends</label><br>
+  <!-- checkboxes -->
+        <label for="poll" id="poll-label">What are you looking forward to in the event?</label><br>
+        <input type="checkbox" name="poll" id="food" value="food">
+        <label for="food">Free food</label><br>
+        <input type="checkbox" name="poll" id="perform" value="perform">
+        <label for="food">Performances</label><br>
+        <input type="checkbox" name="poll" id="prizes" value="prizes">
+        <label for="food">Prizes</label><br>
+        <input type="checkbox" name="poll" id="games" value="games">
+        <label for="food">Games</label><br>
+  <!-- additional comments -->
+        <label for="comments" id="comments-label">Any additional comments?</label><br>
+        <textarea name="comments" rows="8" cols="80" placeholder="Enter your comment here"></textarea><br>
+        <button type="button" name="Submit" id="Submit">Submit</button>
+      </form>
+    </main>
+
+  </body>
+</html>
